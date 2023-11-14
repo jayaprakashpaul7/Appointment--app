@@ -1,0 +1,73 @@
+/* Write your CSS here */
+.bg {
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+  min-height: 100vh;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+}
+.appointment-heading {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.form-img-c {
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  width: 100%;
+  max-width: 220px;
+}
+label {
+  margin-top: 20px;
+}
+input {
+  outline: none;
+  height: 34px;
+  border: 1px solid #8b5cf6;
+  border-radius: 3px;
+  width: 220px;
+  padding: 9px;
+}
+.img {
+  display: none;
+}
+.add-btn {
+  height: 34px;
+  width: 40px;
+  background-color: #8b5cf6;
+  border-radius: 4px;
+  color: white;
+  border: 0;
+  margin-top: 12px;
+  cursor: pointer;
+}
+hr {
+  border: 1px solid #b5b7c4;
+  width: 100%;
+}
+ul {
+  padding: 0;
+}
+.appointments-starred-c {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+span {
+  border: 2px solid #9796f0;
+  transform: matrix(4);
+  border-radius: 9px;
+  padding: 5px;
+  color: #babaf8;
+}

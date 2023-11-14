@@ -1,0 +1,25 @@
+/* Write your CSS here */
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid #b5b7c4;
+  padding: 17px;
+  height: 100%;
+  width: 220px;
+  border-radius: 17px;
+  margin-bottom: 17px;
+}
+.h-star-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+}
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
