@@ -64,10 +64,11 @@ ul {
   justify-content: space-between;
   width: 100%;
 }
-span {
-  border: 2px solid #9796f0;
-  transform: matrix(4);
+.filter-btn {
+  border: 1px solid #9796f0;
+  height: 34px;
+  width: 120px;
   border-radius: 9px;
-  padding: 5px;
+  padding: 3px;
   color: #babaf8;
 }

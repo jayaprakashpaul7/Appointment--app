@@ -24,15 +24,8 @@ class Appointments extends Component {
     }))
   }
 
-  filterStarred = () => {
-    const {appointments, starred} = this.state
-    /* this.setState(prevState=>({starred: prevState.starredList.map(eachStar=>{
-          if ()
-      })})) */
-    const filter = appointments.filter(
-      eachAppointment => eachAppointment.isFavorite,
-    )
-    this.setState({appointments: filter})
+  toggleStarred = () => {
+    this.setState(prevState => ({starred: !prevState.starred}))
   }
 
   toggleStar = id => {
@@ -55,7 +48,14 @@ class Appointments extends Component {
   }
 
   render() {
-    const {title, date, appointments} = this.state
+    const {title, date, appointments, starred} = this.state
+    let filterd
+
+    if (starred) {
+      filterd = appointments.filter(each => each.isFavorite === true)
+    } else {
+      filterd = appointments
+    }
 
     return (
       <div className="bg">
@@ -72,7 +72,7 @@ class Appointments extends Component {
                 onChange={this.handleTitle}
               />
 
-              <label htmlFor="date">DATE</label>
+              <label htmlFor="date">Date</label>
               <input
                 type="date"
                 placeholder="Date"
@@ -98,13 +98,17 @@ class Appointments extends Component {
           <hr />
           <div className="appointments-starred-c">
             <h1 className="appointments-heading">Appointments</h1>
-            <button onClick={this.filterStarred}>
+            <button
+              type="button"
+              className="filter-btn"
+              onClick={this.toggleStarred}
+            >
               <span>Starred</span>
             </button>
           </div>
 
           <ul>
-            {appointments.map(eachAppointment => (
+            {filterd.map(eachAppointment => (
               <AppointmentItem
                 appointments={eachAppointment}
                 key={eachAppointment.id}

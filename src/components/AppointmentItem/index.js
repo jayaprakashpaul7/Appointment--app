@@ -26,7 +26,7 @@ const AppointmentItem = props => {
         </button>
       </div>
 
-      <p>{`Date: ${date}`}</p>
+      <p>Date: {date}</p>
     </li>
   )
 }
