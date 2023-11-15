@@ -15,7 +15,7 @@ const AppointmentItem = props => {
   return (
     <li>
       <div className="h-star-c">
-        <h1>{title}</h1>
+        <h1 className="title">{title}</h1>
         <button
           type="button"
           className="btn"

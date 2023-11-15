@@ -6,10 +6,9 @@
 }
 .card {
   background-color: white;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 7px;
 }
 .appointment-heading {
@@ -26,7 +25,7 @@
   flex-direction: column;
   font-family: 'Roboto';
   width: 100%;
-  max-width: 220px;
+  max-width: 320px;
 }
 label {
   margin-top: 20px;
@@ -36,11 +35,16 @@ input {
   height: 34px;
   border: 1px solid #8b5cf6;
   border-radius: 3px;
-  width: 220px;
+  max-width: 320px;
   padding: 9px;
 }
 .img {
   display: none;
+}
+@media (min-width: 557px) {
+  .img {
+    display: block;
+  }
 }
 .add-btn {
   height: 34px;
@@ -58,17 +62,21 @@ hr {
 }
 ul {
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .appointments-starred-c {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 .filter-btn {
   border: 1px solid #9796f0;
   height: 34px;
   width: 120px;
-  border-radius: 9px;
+  border-radius: 14px;
+  align-self: center;
   padding: 3px;
   color: #babaf8;
 }

@@ -95,6 +95,7 @@ class Appointments extends Component {
               />
             </div>
           </div>
+
           <hr />
           <div className="appointments-starred-c">
             <h1 className="appointments-heading">Appointments</h1>

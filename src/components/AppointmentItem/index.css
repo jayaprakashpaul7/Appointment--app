@@ -3,20 +3,26 @@ li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   border: 1px solid #b5b7c4;
   padding: 17px;
-  height: 100%;
-  width: 220px;
+  height: 130px;
+  width: 320px;
   border-radius: 17px;
   margin-bottom: 17px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
 }
 .h-star-c {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 220px;
+  max-width: 320px;
 }
 .btn {
   border: none;
